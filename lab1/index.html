@@ -7,7 +7,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   
 </head>
-<body class="bg-slate-900">
+<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-sky-900">
   <nav class="fixed top-0 left-0 w-full  border-b-1 border-sky-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
@@ -46,10 +46,70 @@
   </nav>
 
   <!-- Optional Hero to Test Transparency -->
-  <div class="text-sky-300 pt-36 px-4  items-center">
-    <h1>Every Story Has a Door</h1>
-    <p>Open it. Explore new worlds. Experience the magic of reading.</p>
-    <button>Open a Story</button>
+  <div class="text-sky-300 pt-36 px-4  flex flex-col items-center text-center min-h-screen">
+    <div class="absolute inset-0  opacity-60 -z-10"></div>
+    <h1 class="text-5xl md:text-6xl font-extrabold text-sky-400 drop-shadow-[0_0_15px_rgba(56,189,248,0.7)]">Every Story Has a Door</h1>
+    <p class="mt-6 max-w-xl text-lg md:text-xl text-slate-300">Open it. Explore new worlds. Experience the magic of reading.</p>
+    <button class="mt-8 px-8 py-4 bg-sky-400 text-slate-900 font-semibold rounded-xl shadow-lg hover:bg-sky-500 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105">Open a Story</button>
+
+   <!-- Book Search Section  -->
+<section class=" py-16 px-4 text-center">
+  <h2 class="text-3xl md:text-4xl font-bold text-sky-400 mb-6 text-center drop-shadow-[0_0_15px_rgba(56,189,248,0.7)] tracking-wide hover:scale-105 transform transition-all duration-300">Find Your Next Read</h2>
+  
+  <!-- Search Bar -->
+  <div class="flex flex-col md:flex-row justify-center items-center  max-w-3xl mx-auto">
+    <input 
+      type="text" 
+      placeholder="Search ..." 
+      class="w-full md:w-2/3 px-4 py-3  border border-b-1 sky-300 rounded-l-lg text-sky-500 focus:outline-none"
+    >
+    <button class="ml-2 px-6 py-3 bg-sky-400 text-slate-900 font-semibold rounded-r-lg hover:bg-sky-500 transition">
+      Search
+    </button>
+  </div>
+</section>
+
+<section class="py-16 px-4 relative bg-slate-900 rounded-2xl">
+  <!-- Glow overlay -->
+  <div class="absolute relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 w-120 inset-0 bg-gradient-to-tr from-sky-900 via-slate-800 to-slate-900 opacity-30 -z-10 rounded-lg"></div>
+
+  <h2 class="text-3xl md:text-4xl font-semibold text-sky-400 mb-8 text-center drop-shadow-[0_0_15px_rgba(56,189,248,0.7)] tracking-wide hover:scale-105 transform transition-all duration-300">
+    Featured Books
+  </h2>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+    <!-- Book Card Example -->
+    <div class="bg-slate-800 rounded-xl p-4 shadow-lg hover:scale-105 hover:shadow-xl transform transition-all duration-300">
+      <img src="./book1.jpg" alt="Book Cover" class="rounded-lg mb-4 animate-pulse-slow">
+      <h3 class="text-sky-400 font-bold text-lg mb-1">Knowing God</h3>
+      <p class="text-slate-300 text-sm mb-2">Robertson Davies' novels are profound and witty explorations of the search for God and personal identity. </p>
+      <button class="px-4 py-2 bg-sky-400 text-slate-900 font-semibold rounded-lg hover:bg-sky-500 transition">
+        Add to Favorites
+      </button>
+    </div>
+
+    <div class="bg-slate-800 rounded-xl p-4 shadow-lg hover:scale-105 hover:shadow-xl transform transition-all duration-300">
+      <img src="./book2.jpg" alt="Book Cover" class="rounded-lg mb-4 animate-pulse-slow">
+      <h3 class="text-sky-400 font-bold text-lg mb-1">cliched christian</h3>
+      <p class="text-slate-300 text-sm mb-2">Nathan Carter's book,Legacy of Faith and Wisdom for the Next Generation.</p>
+      <button class="px-4 py-2 bg-sky-400 text-slate-900 font-semibold rounded-lg hover:bg-sky-500 transition">
+        Add to Favorites
+      </button>
+    </div>
+     <div class="bg-slate-800 rounded-xl p-4 shadow-lg hover:scale-105 hover:shadow-xl transform transition-all duration-300">
+      <img src="./book3.jpg" alt="Book Cover" class="rounded-lg mb-4 animate-pulse-slow">
+      <h3 class="text-sky-400 font-bold text-lg mb-1">Where are you God?</h3>
+      <p class="text-slate-300 text-sm mb-2">David Vestal's book,This book provides daily readings and prayers for difficult times, offering spiritual comfort</p>
+      <button class="px-4 py-2 bg-sky-400 text-slate-900 font-semibold rounded-lg hover:bg-sky-500 transition">
+        Add to Favorites
+      </button>
+    </div>
+
+    <!-- Repeat cards for more books -->
+  </div>
+</section>
+
+
   </div>
  
   <script src="js/main.js"></script>

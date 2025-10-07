@@ -8,7 +8,7 @@
   
 </head>
 <body class="bg-gradient-to-br from-slate-900 via-slate-800 to-sky-900">
-  <nav class="fixed top-0 left-0 w-full  border-b-1 border-sky-300">
+  <nav class="fixed top-0 left-0 w-full  border-b-1 border-sky-300 z-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
         
@@ -77,10 +77,10 @@
     Featured Books
   </h2>
   
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
     <!-- Book Card Example -->
-    <div class="bg-slate-800 rounded-xl p-4 shadow-lg hover:scale-105 hover:shadow-xl transform transition-all duration-300">
-      <img src="./book1.jpg" alt="Book Cover" class="rounded-lg mb-4 animate-pulse-slow">
+    <div class="bg-slate-800 rounded-xl p-4 shadow-lg hover:scale-105 hover:shadow-xl transform transition-all duration-300 ">
+      <img src="./book1.jpg" alt="Book Cover" class="rounded-lg mb-4 animate-pulse-slow h-80 ">
       <h3 class="text-sky-400 font-bold text-lg mb-1">Knowing God</h3>
       <p class="text-slate-300 text-sm mb-2">Robertson Davies' novels are profound and witty explorations of the search for God and personal identity. </p>
       <button class="px-4 py-2 bg-sky-400 text-slate-900 font-semibold rounded-lg hover:bg-sky-500 transition">
@@ -89,7 +89,7 @@
     </div>
 
     <div class="bg-slate-800 rounded-xl p-4 shadow-lg hover:scale-105 hover:shadow-xl transform transition-all duration-300">
-      <img src="./book2.jpg" alt="Book Cover" class="rounded-lg mb-4 animate-pulse-slow">
+      <img src="./book2.jpg" alt="Book Cover" class="rounded-lg mb-4 animate-pulse-slow h-80">
       <h3 class="text-sky-400 font-bold text-lg mb-1">cliched christian</h3>
       <p class="text-slate-300 text-sm mb-2">Nathan Carter's book,Legacy of Faith and Wisdom for the Next Generation.</p>
       <button class="px-4 py-2 bg-sky-400 text-slate-900 font-semibold rounded-lg hover:bg-sky-500 transition">
@@ -97,9 +97,17 @@
       </button>
     </div>
      <div class="bg-slate-800 rounded-xl p-4 shadow-lg hover:scale-105 hover:shadow-xl transform transition-all duration-300">
-      <img src="./book3.jpg" alt="Book Cover" class="rounded-lg mb-4 animate-pulse-slow">
+      <img src="./book3.jpg" alt="Book Cover" class="rounded-lg mb-4 animate-pulse-slow h-80">
       <h3 class="text-sky-400 font-bold text-lg mb-1">Where are you God?</h3>
       <p class="text-slate-300 text-sm mb-2">David Vestal's book,This book provides daily readings and prayers for difficult times, offering spiritual comfort</p>
+      <button class="px-4 py-2 bg-sky-400 text-slate-900 font-semibold rounded-lg hover:bg-sky-500 transition">
+        Add to Favorites
+      </button>
+    </div>
+    <div class="bg-slate-800 rounded-xl p-4 shadow-lg hover:scale-105 hover:shadow-xl transform transition-all duration-300">
+      <img src="./book4.jpg" alt="Book Cover" class="rounded-lg mb-4 animate-pulse-slow h-80">
+      <h3 class="text-sky-400 font-bold text-lg mb-1">Christian Heroes Just Like You</h3>
+      <p class="text-slate-300 text-sm mb-2">by Catherine Mackenzie is a collection of short, inspirational biographies of 21 key figures from church history.</p>
       <button class="px-4 py-2 bg-sky-400 text-slate-900 font-semibold rounded-lg hover:bg-sky-500 transition">
         Add to Favorites
       </button>
@@ -111,7 +119,53 @@
 
 
   </div>
- 
+ <footer class="bg-slate-900 text-slate-300 py-12 px-4 mt-3">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!-- About Section -->
+    <div>
+      <h3 class="text-sky-400 text-xl font-bold mb-4">Book Explorer</h3>
+      <p class="text-slate-400">
+        Discover, explore, and save your favorite books all in one place. Dive into stories that inspire and entertain.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-sky-400 text-xl font-bold mb-4">Quick Links</h3>
+      <ul class="space-y-2">
+        <li><a href="index.html" class="hover:text-sky-400 transition">Home</a></li>
+        <li><a href="favorites.html" class="hover:text-sky-400 transition">Favorites</a></li>
+        <li><a href="about.html" class="hover:text-sky-400 transition">About</a></li>
+      </ul>
+    </div>
+
+    <!-- Social / Contact -->
+    <div>
+      <h3 class="text-sky-400 text-xl font-bold mb-4">Follow Us</h3>
+      <div class="flex space-x-4">
+        <!-- Replace with your social links or icons -->
+        <a href="#" class="hover:text-sky-400 transition">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 0 0 1.88-2.36 8.53 8.53 0 0 1-2.7 1.03 4.27 4.27 0 0 0-7.3 3.9A12.12 12.12 0 0 1 3.15 4.6a4.27 4.27 0 0 0 1.32 5.7 4.26 4.26 0 0 1-1.94-.54v.05a4.28 4.28 0 0 0 3.42 4.19 4.28 4.28 0 0 1-1.93.07 4.28 4.28 0 0 0 3.99 2.97A8.56 8.56 0 0 1 2 19.54a12.1 12.1 0 0 0 6.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19-.01-.39-.02-.58A8.68 8.68 0 0 0 24 5.1a8.54 8.54 0 0 1-2.54.7z"/>
+          </svg>
+        </a>
+        <a href="#" class="hover:text-sky-400 transition">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.42 2.87 8.16 6.84 9.48v-6.72h-2.06v-2.76h2.06v-2.1c0-2.04 1.2-3.16 3.04-3.16.88 0 1.8.16 1.8.16v1.96h-1.02c-1.02 0-1.34.64-1.34 1.3v1.84h2.28l-.36 2.76h-1.92v6.72c3.97-1.32 6.84-5.06 6.84-9.48 0-5.5-4.46-9.96-9.96-9.96z"/>
+          </svg>
+        </a>
+        <!-- Add more icons if needed -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="border-t border-slate-700 mt-8 pt-6 text-center text-slate-500 text-sm">
+    &copy; 2025 Book Explorer. All rights reserved.
+  </div>
+</footer>
+
   <script src="js/main.js"></script>
 </body>
 </html>

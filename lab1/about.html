@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Book Explorer</title>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+</head>
+<body class="bg-slate-900 text-slate-300 antialiased">
+
+  <!-- NAV (exact as you provided, with z-20) -->
+  <nav class="fixed top-0 left-0 w-full  border-b-1 border-sky-300 z-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        
+        <div class="flex items-center">
+          <img src="./books.png" alt="Logo" class="h-8 w-auto">
+          <h1 class="ml-2 text-xl font-bold text-sky-300">Book Explorer</h1>
+        </div>
+        
+        <!-- Right: Navigation Links (Desktop) -->
+        <div class="hidden md:flex items-center space-x-4">
+          <a href="index.html" class="text-sky-300 px-3 py-2 rounded-md text-sm font-medium hover:bg-white/10 transition duration-300">Home</a>
+          <a href="../lab2/favorites.html" class="text-sky-300 px-3 py-2 rounded-md text-sm font-medium hover:bg-white/10 transition duration-300">Favorites</a>
+          <a href="about.html" class="text-sky-300 px-3 py-2 rounded-md text-sm font-medium hover:bg-white/10 transition duration-300">About</a>
+        </div>
+        
+        <!-- Mobile Hamburger Button -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-toggle" class="text-white hover:text-gray-300 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 bg-transparent">
+          <a href="index.html" class="block text-white px-3 py-2 rounded-md text-base font-medium hover:bg-white/10 transition duration-300">Home</a>
+          <a href="favorites.html" class="block text-white px-3 py-2 rounded-md text-base font-medium hover:bg-white/10 transition duration-300">Favorites</a>
+          <a href="about.html" class="block text-white px-3 py-2 rounded-md text-base font-medium hover:bg-white/10 transition duration-300">About</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="relative pt-28 pb-16 px-4 text-center min-h-[40vh] flex items-center justify-center">
+    <!-- narrow glow behind hero -->
+    <div class="absolute inset-y-0 left-1/2 -translate-x-1/2 w-11/12 max-w-5xl bg-gradient-to-tr from-sky-900 via-slate-800 to-slate-900 opacity-25 -z-10 rounded-2xl"></div>
+
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-sky-400 drop-shadow-[0_0_20px_rgba(56,189,248,0.6)] tracking-tight">
+        We Open Doors to Worlds
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-slate-300 max-w-2xl mx-auto">
+        At Book Explorer we craft moments of wonder. We collect stories that pull you in, pages that stay with you, and recommendations that feel hand-picked.
+      </p>
+
+      <div class="mt-8 flex justify-center gap-4">
+        <a href="index.html" class="px-6 py-3 bg-sky-400 text-slate-900 font-semibold rounded-xl shadow-lg hover:bg-sky-500 transition transform hover:-translate-y-1">Start Exploring</a>
+        <a href="#our-story" class="px-6 py-3 border border-slate-700 text-slate-300 rounded-xl hover:bg-white/5 transition">Our Story</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN: Story + Mission + Values -->
+  <main class="max-w-7xl mx-auto px-4 pb-16">
+
+    <!-- Our Story -->
+    <section id="our-story" class="relative mb-12 mt-5 ml-5">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold text-sky-400 mb-4 drop-shadow-[0_0_12px_rgba(56,189,248,0.5)]">Our Story</h2>
+          <p class="text-slate-300 mb-4">
+            What began as a late-night search for a hard-to-find title became a promise: make discovery effortless, beautiful, and a little magical.
+            Book Explorer grew from a simple idea — that every reader deserves a place where surprises are around every corner. We gather the notable, the overlooked, and the utterly unexpected, then serve them with thoughtful context so you can fall in love, again and again.
+          </p>
+          <p class="text-slate-400">
+            We’re builders, readers, and relentless curators. We care about design, speed, and the joy of finding a book that changes the day (or the decade).
+          </p>
+        </div>
+
+        <div class="relative">
+          <div class="bg-slate-800 rounded-2xl p-6 shadow-xl">
+            <img src="./reading.webp" alt="Books stack" class="rounded-lg mb-4 w-full object-cover h-56">
+            <blockquote class="text-slate-300 italic">“Beautifully curated, unexpectedly delightful.”</blockquote>
+          </div>
+          <div class="absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-sky-400 opacity-10 -z-10 animate-float-slow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="mb-12">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-slate-800 rounded-xl p-6 shadow-lg">
+          <h3 class="text-sky-400 font-bold mb-3">Our Mission</h3>
+          <p class="text-slate-300 text-sm">
+            To make discovery effortless: connect curious readers with books that surprise, teach and uplift — from modern hits to timeless gems.
+          </p>
+        </div>
+
+        <div class="bg-slate-800 rounded-xl p-6 shadow-lg">
+          <h3 class="text-sky-400 font-bold mb-3">What We Believe</h3>
+          <ul class="text-slate-300 text-sm space-y-2">
+            <li>• Great design invites exploration.</li>
+            <li>• Small discoveries matter as much as big ones.</li>
+            <li>• Reading expands empathy and imagination.</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-800 rounded-xl p-6 shadow-lg">
+          <h3 class="text-sky-400 font-bold mb-3">How We Work</h3>
+          <p class="text-slate-300 text-sm">
+            Curated lists, smart recommendations, and a fast, calm interface — all built with privacy and speed in mind.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="mb-12">
+      <h2 class="text-2xl md:text-3xl font-semibold text-sky-400 mb-6 text-center drop-shadow-[0_0_12px_rgba(56,189,248,0.5)]">The People Behind the Pages</h2>
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-slate-800 rounded-xl p-6 shadow-lg text-center">
+          <div class="w-24 h-24 mx-auto rounded-full bg-sky-400 flex items-center justify-center mb-4 text-slate-900 font-bold text-xl">A</div>
+          <h4 class="text-sky-400 font-bold">Ariane Mwiza</h4>
+          <p class="text-slate-300 text-sm">Founder & curator — finds the books you didn't know you needed.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-slate-800 rounded-xl p-6 shadow-lg text-center">
+          <div class="w-24 h-24 mx-auto rounded-full bg-sky-400 flex items-center justify-center mb-4 text-slate-900 font-bold text-xl">I</div>
+          <h4 class="text-sky-400 font-bold">Isimbi Nadege</h4>
+          <p class="text-slate-300 text-sm">Design & frontend — shapes the experience and keeps it delightful.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-slate-800 rounded-xl p-6 shadow-lg text-center">
+          <div class="w-24 h-24 mx-auto rounded-full bg-sky-400 flex items-center justify-center mb-4 text-slate-900 font-bold text-xl">T</div>
+          <h4 class="text-sky-400 font-bold">The Team</h4>
+          <p class="text-slate-300 text-sm">Engineers, readers, and curious people building something to love.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="text-center mt-8">
+      <div class="inline-block bg-gradient-to-br from-slate-800 via-slate-700 to-slate-800 px-8 py-8 rounded-2xl shadow-2xl">
+        <h3 class="text-2xl font-bold text-sky-400 mb-3">Ready to step through the door?</h3>
+        <p class="text-slate-300 mb-6">Explore thousands of books, hand-curated lists, and personal recommendations waiting for you.</p>
+        <a href="index.html" class="px-6 py-3 bg-sky-400 text-slate-900 font-semibold rounded-xl shadow hover:bg-sky-500 transition">Explore the Library</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (matching the footer you used earlier) -->
+  <footer class="bg-slate-900 text-slate-300 py-12 px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- About Section -->
+      <div>
+        <h3 class="text-sky-400 text-xl font-bold mb-4">Book Explorer</h3>
+        <p class="text-slate-400">
+          Discover, explore, and save your favorite books all in one place. Dive into stories that inspire and entertain.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-sky-400 text-xl font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:text-sky-400 transition">Home</a></li>
+          <li><a href="favorites.html" class="hover:text-sky-400 transition">Favorites</a></li>
+          <li><a href="about.html" class="hover:text-sky-400 transition">About</a></li>
+        </ul>
+      </div>
+
+      <!-- Social / Contact -->
+      <div>
+        <h3 class="text-sky-400 text-xl font-bold mb-4">Follow Us</h3>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-sky-400 transition" aria-label="Twitter">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 0 0 1.88-2.36 8.53 8.53 0 0 1-2.7 1.03 4.27 4.27 0 0 0-7.3 3.9A12.12 12.12 0 0 1 3.15 4.6a4.27 4.27 0 0 0 1.32 5.7 4.26 4.26 0 0 1-1.94-.54v.05a4.28 4.28 0 0 0 3.42 4.19 4.28 4.28 0 0 1-1.93.07 4.28 4.28 0 0 0 3.99 2.97A8.56 8.56 0 0 1 2 19.54a12.1 12.1 0 0 0 6.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19-.01-.39-.02-.58A8.68 8.68 0 0 0 24 5.1a8.54 8.54 0 0 1-2.54.7z"/></svg>
+          </a>
+          <a href="#" class="hover:text-sky-400 transition" aria-label="Facebook">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.42 2.87 8.16 6.84 9.48v-6.72h-2.06v-2.76h2.06v-2.1c0-2.04 1.2-3.16 3.04-3.16.88 0 1.8.16 1.8.16v1.96h-1.02c-1.02 0-1.34.64-1.34 1.3v1.84h2.28l-.36 2.76h-1.92v6.72c3.97-1.32 6.84-5.06 6.84-9.48 0-5.5-4.46-9.96-9.96-9.96z"/></svg>
+          </a>
+        </div>
+      </div>
